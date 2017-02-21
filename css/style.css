@@ -86,7 +86,7 @@ main{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 20em;
-    padding: 1em;
+    padding: .5em 1em 1em 1em;
 }
 
 .feed-item_image{
