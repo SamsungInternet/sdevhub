@@ -9,12 +9,13 @@
         <meta name="theme-color" content="#151213">
         <link rel="icon" href="images/sdevhubicon.png">
         <link rel="manifest" href="manifest.json">
+        <script src="js/sdevhub.js"></script>
     </head>
     <body>
         <main class="main-container">
             <section class="header-section" style="min-height: 100px">
                  <img src="images/sdevhublogo.svg" id="devhublogo" alt="Samsung Internet Developer Hub">
-                 <span class="hamburger">≡</span>
+                 <span class="hamburger" onclick="openMenu()">≡</span>
 
                  <div class="showcase-section">
                      <span class="showcase-text">in the spotlight</span>
@@ -49,6 +50,31 @@
             </section>
 
         </main>
+
+        <div id="burger-menu">
+            <img src="images/sdevhublogod.svg" id="devhublogo" alt="Samsung Internet Developer Hub">
+            <span class="hamburger" onclick="closeMenu()">×</span>
+            <div>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Developer Support</a></li>
+                    <li><a href="#">Bug Tracker</a></li>
+                    <li><a href="#">Demos</a></li>
+                </ul>
+
+                <div id="socials">
+                    <a href="https://twitter.com/samsunginternet">
+                        <img src="images/twitterlogo.svg" class="socialicon" alt="Twitter">
+                    </a>
+                    <a href="https://medium.com/samsung-internet-dev">
+                        <img src="images/mediumlogo.svg" class="socialicon" alt="Medium">
+                    </a>
+                    <a href="https://github.com/samsunginternet">
+                        <img src="images/githublogo.svg" class="socialicon" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
     
     </body>
 </html>
