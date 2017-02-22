@@ -51,6 +51,7 @@ main{
 .main-header_bg{
     background-image: url('../images/bg.jpg');
     filter: blur(5px) grayscale(20%) brightness(60%);
+    -webkit-filter:filter: blur(5px) grayscale(20%) brightness(60%);
     background-size: cover;
     box-shadow: inset 1em 1em 5em 3em #231F20;
     position: absolute;
@@ -69,7 +70,7 @@ main{
     padding: 0em 1.5em 1.5em 1.5em;
     display: flex;
     flex-direction: column;
-    border-radius: 2em 2em 2em 2em;
+    border-radius: .6em .6em .6em .6em;
 }
 
 .norm-subSection_feed{
@@ -138,6 +139,7 @@ main{
 #burger-menu li{
     margin-bottom: 1em;
     list-style-type: none;
+    font-size: 1.5em;
 }
 
 #burger-menu a:link, a:visited, a:active, a:hover{
