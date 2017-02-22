@@ -50,8 +50,8 @@ main{
 
 .main-header_bg{
     background-image: url('../images/bg.jpg');
-    filter: blur(5px) grayscale(20%) brightness(60%);
-    -webkit-filter: blur(5px) grayscale(20%) brightness(60%);
+    filter: blur(5px) brightness(70%);
+    -webkit-filter: blur(5px) brightness(60%);
     background-size: cover;
     box-shadow: inset 1em 1em 5em 3em #231F20;
     position: absolute;
@@ -139,7 +139,6 @@ main{
     z-index: 200;
     color:#231F20;
     flex-direction: column;
-    display: none;
 }
 
 #burger-menu a{
@@ -169,7 +168,15 @@ main{
 #nav-links{
         display: flex;
         flex-direction: column;
-    }
+}
+
+.burger-menu_open{
+    display: flex;
+}
+
+.burger-menu_close{
+    display: none;
+}
 
 @media (max-width:350px){
     .norm-section{
@@ -233,6 +240,10 @@ main{
         width: 1.5em;
         filter: invert(0%);
         -webkit-filter: invert(0%);
+    }
+
+    .burger-menu_open{
+        display: flex;
     }
 
 }
