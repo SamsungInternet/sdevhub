@@ -1,9 +1,15 @@
-let openMenu = () => {
-    let menu = document.getElementById('burger-menu');
-    menu.setAttribute('style', 'display:block;')
-};
+'use strict';
 
-let closeMenu = () => {
-    let menu = document.getElementById('burger-menu');
-    menu.setAttribute('style', 'display:none;')
-};
+var menu = null;
+
+document.addEventListener('DOMContentLoaded', function() {
+    menu = document.getElementById('burger-menu');   
+});
+
+function openMenu() {
+    menu.style.display = 'flex'
+}
+
+function closeMenu() {
+    menu.style.display = 'none'
+}
