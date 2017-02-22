@@ -51,7 +51,7 @@ main{
 .main-header_bg{
     background-image: url('../images/bg.jpg');
     filter: blur(5px) grayscale(20%) brightness(60%);
-    -webkit-filter:filter: blur(5px) grayscale(20%) brightness(60%);
+    -webkit-filter: blur(5px) grayscale(20%) brightness(60%);
     background-size: cover;
     box-shadow: inset 1em 1em 5em 3em #231F20;
     position: absolute;
